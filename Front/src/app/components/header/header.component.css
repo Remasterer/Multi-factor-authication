@@ -1,0 +1,40 @@
+.header{
+
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: .2rem;
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.header__brand img{
+  max-width: 100px;
+}
+.header__menu {
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+li  + li {
+  margin-left: 2rem;
+}
+li {
+  color: pointer;
+}
+a.active{
+  color: teal;
+}
+button:hover{
+  color: #fff;
+  background: teal;
+  border-color: #fff;
+}

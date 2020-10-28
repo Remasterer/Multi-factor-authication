@@ -1,0 +1,40 @@
+.home {
+  padding: 1rem 0;
+}
+.home__inenr {
+  padding-top: 8rem;
+  text-align: center;
+}
+.home__title {
+  margin-bottom: 2rem;
+}
+.home__text {
+}
+.home__copywrite {
+
+}
+p{
+  text-align: right;
+  font-size: 1.5rem;
+}
+.home__copywrite {
+  font-size: 1rme;
+  margin-top: 2rem;
+}
+.home__copywrite span{
+  color: teal;
+  cursor: pointer;
+}
+
+input{
+
+}
+.secret__block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.secret__block h1{
+  padding: 4rem 0;
+}

@@ -1,0 +1,40 @@
+<div class="user-form">
+  <div class="container">
+    <div class="user-form__inner">
+      <form class="form" [formGroup]="authForm" (ngSubmit)="onSubmit()" *ngIf="!submitted">
+        <div class="form-group">
+          <label for="email" >Your Email ✉️</label>
+          <input type="text" id="email" formControlName="email">
+          <small class="text-danger" *ngIf="email.invalid && email.touched">
+              Your email is incorrect
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="password">Your Password 🔐</label>
+          <input type="password" id="password" formControlName="password">
+          <small class="text-danger" *ngIf="password.invalid && password.touched">
+            Your password is incorrect
+          </small>
+          <small>
+            Don't tell anybody 🙅‍♀️
+          </small>
+        </div>
+          <div class="form-group" >
+            <label for="password" for="passwordRepeat">Repeat your Password 🔐</label>
+            <input type="password" id="passwordRepeat" formControlName="repeatPassword">
+            <small class="text-danger" *ngIf="authForm.errors?.misMatch">
+              Passwords don't match
+            </small>
+          </div>
+        <button type="submit" class="form__submit" [disabled]="!authForm.valid">
+          Sing in
+        </button>
+      </form>
+      <div class="succes-message" *ngIf="submitted">
+        Thanks for submitting
+        <p>😜🚀</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{errorMessage}}

@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  color: black;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+.btn{
+  font: inherit;
+  padding: .4rem 1.2rem;
+  background: none;
+  border: 1px solid black;
+  border-radius: .2rem;
+  cursor: pointer;
+  transition: all .3s ease .0s;
+}
+h1{
+  font-size: 3rem;
+}
+ul{
+  list-style: none;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+input{
+  padding: .5rem .4rem;
+  border-radius: .2rem;
+  border: 1px solid black;
+
+}
+.form-group {
+  font-size: 1.5rem;
+}
+.form-group label{
+  padding-bottom: 1rem;
+}
+.form-group  input{
+  max-width: 400px;
+}
+.form-group  small {
+  font-size: .9rem;
+  padding-top: 1.5rem;
+}
+.form__submit{
+  cursor: pointer;
+  padding: .4rem .8rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 200px;
+  background: teal;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-danger{
+  color: red;
+}
+.succes-message{
+  font-size: 2.5rem;
+  padding-top: 2rem ;
+  text-align: center;
+}
+.user-form__inner{
+  display: flex;
+  justify-content: center;
+
+}
+.user-form__inner form{
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+}

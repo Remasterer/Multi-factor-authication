@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header__inner">
+    <a class="header__brand">
+      <img src="../../../assets/images/logo.png" alt="Main logo">
+      <span>
+        Elif tech
+      </span>
+    </a>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li *ngIf="!isLoggedIn">
+          <button class="btn e--sign" (click)="onSignIn()">
+            Sign up
+          </button>
+        </li>
+        <li *ngIf="!isLoggedIn">
+          <button class="btn e--login" (click)="onLogIn()">
+            Log in
+          </button>
+        </li>
+        <li class="nav-item" *ngIf="isLoggedIn">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
